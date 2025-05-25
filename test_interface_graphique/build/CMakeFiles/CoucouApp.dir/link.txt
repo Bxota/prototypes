@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/CoucouApp.dir/main.cpp.o -o CoucouApp   -L/opt/homebrew/lib  -L/opt/homebrew/Cellar/sdl2_ttf/2.24.0/lib  -Wl,-rpath,/opt/homebrew/lib -Wl,-rpath,/opt/homebrew/Cellar/sdl2_ttf/2.24.0/lib -lSDL2 -lSDL2_ttf -lSDL2 -lSDL2_ttf

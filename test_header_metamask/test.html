@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header MetaMask</title>
+  <!-- Intégration de Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#">
+          <!-- Remplacez 'logo.svg' par le chemin de votre logo -->
+          <img class="h-8 w-auto" src="logo.svg" alt="Logo MetaMask" />
+        </a>
+      </div>
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Features</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Learn</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Support</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Developers</a>
+      </nav>
+      <!-- Bouton CTA -->
+      <div class="hidden md:block">
+        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Get MetaMask</a>
+      </div>
+      <!-- Bouton menu mobile -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+          <!-- Icône hamburger -->
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-3 space-y-1">
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Features</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Learn</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Support</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Developers</a>
+      <a href="#" class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition mt-2">Get MetaMask</a>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="pt-20">
+    <div class="max-w-7xl mx-auto p-4">
+      <h1 class="text-3xl font-bold text-gray-800">Bienvenue sur la page de démonstration du header MetaMask</h1>
+      <p class="mt-4 text-gray-600">Ce contenu est ici pour illustrer le décalage dû au header fixe.</p>
+    </div>
+  </main>
+
+  <!-- Script JavaScript pour le menu mobile -->
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+/Users/tleterme/Documents/Code/test cursor/build/CMakeFiles/CoucouApp.dir
+/Users/tleterme/Documents/Code/test cursor/build/CMakeFiles/edit_cache.dir
+/Users/tleterme/Documents/Code/test cursor/build/CMakeFiles/rebuild_cache.dir

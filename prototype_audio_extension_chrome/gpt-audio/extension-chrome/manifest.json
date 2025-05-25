@@ -1,0 +1,19 @@
+{
+  "name": "Audio Share",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+        "audio",
+        "activeTab",
+        "debugger",
+        "desktopCapture",
+        "notifications"
+    ],
+  "host_permissions": [
+      "https://*/"
+  ],
+  "action": {
+      "default_popup": "hello.html",
+      "default_action": "home.js"
+  }
+}
