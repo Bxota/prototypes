@@ -1,48 +1,20 @@
-# Application Coucou
+# Test Interface Graphique
 
-Une simple application qui affiche "Coucou" dans une fenêtre graphique.
+Ce projet est un test d'une interface graphique en C++.
 
-## Prérequis
-
-- CMake (version 3.10 ou supérieure)
-- SFML 2.5 ou supérieure
-- Un compilateur C++ compatible C++17
-
-## Installation de SFML sur macOS
-
-Vous pouvez installer SFML en utilisant Homebrew :
-
-```bash
-brew install sfml
-```
-
-## Compilation
-
-1. Créez un dossier build et accédez-y :
+## Lancement
 
 ```bash
 mkdir build
 cd build
-```
-
-2. Générez les fichiers de build avec CMake :
-
-```bash
 cmake ..
-```
-
-3. Compilez le projet :
-
-```bash
 make
+./test_interface_graphique
 ```
 
-## Exécution
+## Structure
 
-Dans le dossier build, exécutez :
-
-```bash
-./CoucouApp
-```
-
-Une fenêtre devrait s'ouvrir avec le texte "Coucou" centré.
+- main.cpp : Fichier principal du projet.
+- CMakeLists.txt : Fichier de configuration CMake.
+- Arial.ttf : Police de caractères utilisée dans l'interface.
+- build/ : Dossier de build généré par CMake.
